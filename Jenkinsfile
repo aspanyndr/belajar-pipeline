@@ -11,7 +11,6 @@ pipeline {
 			steps{
 				sh 'docker stop belajar-pipeline-3 || true'
 				sh 'docker rm belajar-pipeline-3 || true'
-
 			}
 		}
 		stage('run'){
