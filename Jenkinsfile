@@ -7,7 +7,9 @@ pipeline {
 			}
 		}
 		stage('run'){
-			steps 'docker run --name belajar-pipeline -d -p 5000:80' belajar-pipeline
+			steps {
+				sh 'docker run --name belajar-pipeline -d -p 5000:80' belajar-pipeline
+			}
 		}
 	}
 }
