@@ -3,12 +3,12 @@ pipeline {
 	stages{
 		stage('build'){
 			steps{
-				sh 'docker build -t belajar-pipeline-2 .'
+				sh 'docker build -t belajar-pipeline-3 .'
 			}
 		}
 		stage('run'){
 			steps {
-				sh 'docker run --name belajar-pipeline-2 -d -p 5022:80 belajar-pipeline-2'
+				sh 'docker run --name belajar-pipeline-3 -d -p 5023:80 belajar-pipeline-3'
 			}
 		}
 	}
